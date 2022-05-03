@@ -14,8 +14,9 @@ def is_min_less_max(min, max):
 
 def is_equation(equation):
     try:
-        x = 0
-        eval(equation)
+        eq = equation.replace('^', '**')
+        x = 1
+        eval(eq)
         return True
     except:
         return False

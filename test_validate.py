@@ -21,7 +21,7 @@ class TestIsNumber(unittest.TestCase):
     def test_is_equation(self):
         self.assertTrue(is_equation("-50"))
         self.assertTrue(is_equation("-50*x"))
-        self.assertTrue(is_equation("5*x^3 + x**2 -8*x"))
+        self.assertTrue(is_equation("5*x^3 + x**2 - 8/x"))
         self.assertFalse(is_equation("5x"))
         self.assertFalse(is_equation("string"))
 
