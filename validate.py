@@ -14,6 +14,7 @@ def is_min_less_max(min, max):
 
 def is_equation(equation):
     try:
+        x = 0
         eval(equation)
         return True
     except:
